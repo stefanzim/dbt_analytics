@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: tpch_sample
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF{{ var('tpch_size', 10) }}
+    tables:
+      - name: LINEITEM
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: PARTSUPP
+      - name: SUPPLIER
+      - name: PART
+      - name: NATION
+      - name: REGION
+  - name: online_shopping
+    database: DV_PROTOTYPE_DB
+    schema: PUBLIC
+    tables:
+      - name: ONLINE_SHOPPING
