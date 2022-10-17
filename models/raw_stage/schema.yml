@@ -17,4 +17,4 @@ sources:
     database: STAGING_SAP_ECC
     schema: PUBLIC
     tables:
-      - name: COUNTRY_CD
+      - name: COUNTRY_CODE

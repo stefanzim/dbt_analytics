@@ -48,3 +48,16 @@ models:
       tags:
         - 'raw'
       materialized: view
+    stage:
+      tags:
+        - 'stage'
+      enabled: true
+      materialized: view
+    raw_vault:
+      tags:
+        - 'raw_vault'
+      materialized: incremental
+      refs:
+        tags:
+          - 'reference'
+        materialized: table
