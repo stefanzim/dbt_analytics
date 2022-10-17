@@ -13,8 +13,8 @@ sources:
       - name: PART
       - name: NATION
       - name: REGION
-  - name: online_shopping
-    database: DV_PROTOTYPE_DB
+  - name: staging_sap_ecc
+    database: STAGING_SAP_ECC
     schema: PUBLIC
     tables:
-      - name: ONLINE_SHOPPING
+      - name: COUNTRY_CD
